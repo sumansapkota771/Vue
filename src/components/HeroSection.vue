@@ -16,8 +16,6 @@
         <button class="text-black text-lg font-medium hover:underline">Learn more →</button>
       </div>
     </div>
-
-    <!-- Floating Image 1 (Top) -->
     <div
       class="absolute top-0 left-1/4 transform scale-50 translate-x-20 translate-y-[-10rem]"
       :style="{ transform: 'translateY(' + image1Position + 'px)' }"
@@ -25,12 +23,11 @@
       <img src="../assets/1.png" alt="Productivity Illustration" class="w-full object-contain" />
     </div>
 
-    <!-- Middle Image -->
+
     <div class="flex justify-end transform scale-75 animate-float rotate-185">
       <img src="../assets/herocsection.png" alt="Productivity Illustration" class="w-full object-contain" />
     </div>
 
-    <!-- Floating Image 2 (Bottom Right, Slightly Moved Right) -->
     <div
       class="absolute bottom-0 right-0 transform scale-50 translate-x-20 translate-y-40 z-40 rotate-30"
       :style="{ transform: 'translateY(' + image2Position + 'px)' }"
@@ -45,8 +42,8 @@ export default {
   name: "HeroSection",
   data() {
     return {
-      image1Position: -150, // initial position for Image 1
-      image2Position: 150, // initial position for Image 2
+      image1Position: -150, 
+      image2Position: 150,
     };
   },
   mounted() {

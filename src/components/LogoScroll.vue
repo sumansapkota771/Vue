@@ -1,16 +1,14 @@
 <template>
   <div class="scroller-container overflow-hidden relative">
-    <!-- Blurred overlay at the start -->
     <div class="absolute top-0 left-0 w-1/6 h-full z-10 bg-gradient-to-r from-white via-white/70 to-transparent"></div>
 
-    <!-- Scrolling area -->
+
     <div class="scroller flex whitespace-nowrap">
       <div v-for="(logo, index) in duplicatedLogos" :key="index" class="logo-item mx-4 flex-shrink-0">
         <img :src="logo" alt="Logo" class="h-12" />
       </div>
     </div>
 
-    <!-- Blurred overlay at the end -->
     <div class="absolute top-0 right-0 w-1/6 h-full z-10 bg-gradient-to-l from-white via-white/70 to-transparent"></div>
   </div>
 </template>
